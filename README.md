@@ -1,12 +1,45 @@
 # Task Dashboard Management 
 ## React + TypeScript + Vite + Javascript + Tailwind
 
+ **[Project link]**[https://dashboard-task-managemnt.netlify.app]
+
 
 
 ## Overview
 In this assessment, you will apply the skills you have developed throughout your React training to build a functional, real-world dashboard application. This project will test your understanding of React components, state management, TypeScript integration, form handling, and component composition.
 
 You will create a Task Management Dashboard using React and TypeScript. The final deliverable will include a GitHub repository with your project and a written reflection on your approach and the challenges you faced.
+
+## Installation
+
+### Create a new React TypeScript project using Vite:
+```js
+npm create vite@latest task-dashboard -- --template react-ts
+cd task-dashboard
+npm install
+```
+
+### Tailwind Installation
+```js
+npm install tailwindcss @tailwindcss/vite
+```
+### Configure the Vite plugin
+```js
+// vite.config.ts
+import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [
+    tailwindcss(),
+  ],
+})
+```
+### Import Tailwind in your CSS file
+```js
+/* src/index.css */
+@import "tailwindcss";
+```
 
 ## Project Structure
 ```js
@@ -42,7 +75,7 @@ task-dashboard/
 
 ## Deployment
 - **[GitHub Repo]** [https://github.com/Asim0712/Dashboard-Task-Management--SBA-9]
-- **[Project link]**[http://127.0.0.1:5500/Mod7/rest-countries-api-with-color-theme-switcher-master/src/index.html]
+- **[Project link]**[https://dashboard-task-managemnt.netlify.app/]
 
 ## Author:  Asim Daud Khan
 
